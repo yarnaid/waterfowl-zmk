@@ -38,6 +38,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        l_br {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 4>;
+        };
+
+        r_br {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <5 6>;
+        };
+
+        l_par {
+            bindings = <&kp LPAR>;
+            key-positions = <13 14>;
+        };
+
+        l_brc {
+            bindings = <&kp LBRC>;
+            key-positions = <23 24>;
+        };
+
+        r_par {
+            bindings = <&kp RPAR>;
+            key-positions = <15 16>;
+        };
+
+        r_brc {
+            bindings = <&kp RBRC>;
+            key-positions = <25 26>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,7 +116,7 @@
 
         nav-fn-media {
             bindings = <
-&kp F1                &kp F2            &kp F3               &kp F4               &kp F5      &kp F6    &kp F7            &kp F8         &kp F9           &kp F10
+&kp F1                &kp F2            &kp F3               &kp F4               &kp F5      &kp F6    &kp F7            &kp F8         &mt F11 F9       &mt F12 F10
 &hml C_PREVIOUS LGUI  &hml C_NEXT LALT  &hml C_VOL_DN LCTRL  &hml C_VOL_UP LSHFT  &kp C_PP    &kp LEFT  &hmr DOWN RSHIFT  &hmr UP RCTRL  &hmr RIGHT RALT  &trans
 &trans                &trans            &trans               &trans               &trans      &kp LEFT  &kp DOWN          &kp UP         &kp RIGHT        &trans
 &trans                &trans            &trans               &trans               &trans      &trans    &trans            &trans         &trans           &trans
@@ -96,6 +130,15 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &bootloader  &sys_reset
 &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        sys {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
