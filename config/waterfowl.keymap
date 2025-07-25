@@ -57,10 +57,10 @@
  */
 
             bindings = <
-&kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I          &kp O         &kp P
-&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G    &kp H  &hmr LSHFT J  &hmr LCTRL K   &hmr LALT L   &hmr LGUI SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA      &kp DOT       &kp FSLH
-&none        &lt 0 ESC    &kp TAB       &lt 1 SPACE   &none    &none  &kp ENTER     &kp BACKSPACE  &lt 0 DELETE  &none
+&kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I          &kp O        &kp P
+&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G    &kp H  &hmr LSHFT J  &hmr LCTRL K   &hmr LALT L  &hmr LGUI SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA      &kp DOT      &kp FSLH
+&none        &gresc       &kp TAB       &lt 1 SPACE   &none    &none  &lt 2 ENTER   &kp BACKSPACE  &kp DEL      &none
             >;
 
             sensor-bindings = <
