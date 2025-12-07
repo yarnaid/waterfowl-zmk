@@ -110,10 +110,10 @@
 
         num-sym {
             bindings = <
-&kp LS(EXCL)  &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)      &kp LS(STAR)      &kp LS(LPAR)    &kp LS(RPAR)
-&hml LCMD N1  &hml LALT N2  &hml LCTRL N3  &hml LSHFT N4  &kp N5           &kp MINUS      &hmr RSHFT EQUAL  &hmr RCTRL GRAVE  &hmr RALT BSLH  &hmr RGUI SQT
-&kp N6        &kp N7        &kp N8         &kp N9         &kp N0           &kp LS(UNDER)  &kp LS(PLUS)      &kp LS(TILDE)     &kp LS(PIPE)    &kp LS(DQT)
-&trans        &trans        &trans         &trans         &trans           &trans         &trans            &trans            &trans          &trans
+&kp EXCL      &kp AT        &kp HASH       &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPS          &kp STAR          &kp LPAR        &kp RPAR
+&hml LCMD N1  &hml LALT N2  &hml LCTRL N3  &hml LSHFT N4  &kp N5         &kp MINUS  &hmr RSHFT EQUAL  &hmr RCTRL GRAVE  &hmr RALT BSLH  &hmr RGUI SQT
+&kp N6        &kp N7        &kp N8         &kp N9         &kp N0         &kp UNDER  &kp PLUS          &kp TILDE         &kp PIPE        &kp DOUBLE_QUOTES
+&trans        &trans        &trans         &trans         &trans         &trans     &trans            &trans            &trans          &trans
             >;
         };
 
