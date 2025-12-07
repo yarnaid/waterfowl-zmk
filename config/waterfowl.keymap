@@ -68,6 +68,11 @@
             bindings = <&kp RBRC>;
             key-positions = <25 26>;
         };
+
+        studio {
+            bindings = <&studio_unlock>;
+            key-positions = <34 35>;
+        };
     };
 
     keymap {
