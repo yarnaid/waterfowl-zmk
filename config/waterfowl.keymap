@@ -86,7 +86,7 @@
         double_cmd: double_cmd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RCMD &kp LCMD>;
+            bindings = <&kp RCMD &none &kp LCMD>;
             label = "DOUBLE_CMD";
         };
     };
