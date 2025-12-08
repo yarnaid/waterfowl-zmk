@@ -34,6 +34,13 @@
             require-prior-idle-ms = <150>;
             quick-tap-ms = <175>;
         };
+
+        voice_mouse: voice_mouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOICE_MOUSE";
+            #binding-cells = <0>;
+            bindings = <&kp F13>, <&double_cmd>;
+        };
     };
 
     combos {
@@ -75,6 +82,15 @@
         };
     };
 
+    macros {
+        double_cmd: double_cmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCMD &kp LCMD>;
+            label = "DOUBLE_CMD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -94,10 +110,10 @@
  */
 
             bindings = <
-&kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I          &kp O        &kp P
-&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G    &kp H  &hmr LSHFT J  &hmr LCTRL K   &hmr LALT L  &hmr LGUI SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA      &kp DOT      &kp FSLH
-&none        &gresc       &kp TAB       &lt 1 SPACE   &none    &none  &lt 2 ENTER   &kp BACKSPACE  &kp DEL      &none
+&kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I          &kp O         &kp P
+&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G    &kp H  &hmr LSHFT J  &hmr LCTRL K   &hmr LALT L   &hmr LGUI SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA      &kp DOT       &kp FSLH
+&mo 4        &gresc       &kp TAB       &lt 1 SPACE   &none    &none  &lt 2 ENTER   &kp BACKSPACE  &voice_mouse  &none
             >;
 
             sensor-bindings = <
@@ -132,6 +148,15 @@
 &trans        &trans        &trans        &trans        &out OUT_TOG    &trans          &trans  &trans  &trans       &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &studio_unlock  &trans  &trans  &bootloader  &sys_reset
 &trans        &trans        &trans        &trans        &trans          &trans          &trans  &trans  &trans       &trans
+            >;
+        };
+
+        aerospace {
+            bindings = <
+&trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans
+&kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)    &trans  &trans  &trans  &trans  &trans
+&kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)    &trans  &trans  &trans  &trans  &trans
+&trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
