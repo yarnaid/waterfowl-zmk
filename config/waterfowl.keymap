@@ -153,7 +153,7 @@
 
         aerospace {
             bindings = <
-&trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans
+&trans      &kp LA(W)   &kp LA(E)   &trans      &trans        &trans  &trans  &trans  &trans  &trans
 &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)    &trans  &trans  &trans  &trans  &trans
 &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)    &trans  &trans  &trans  &trans  &trans
 &trans      &trans      &trans      &trans      &trans        &trans  &trans  &trans  &trans  &trans
